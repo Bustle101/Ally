@@ -1,27 +1,27 @@
-import "../css/enter.css"
+import "../css/registration.css"
 import { Link } from "react-router-dom";
 
-export default function Enter(){
+export default function Lostpassword(){
     return(
         <div className="enter">
             <div className="login-container">
-                   
+
+                    
                     <div className="login-form">
-                        <h1 className="login-title">Вход</h1>
+                        <Link className="back" to="/">Назад</Link>
+                        <h2 className="login-title">Восстановление пароля</h2>
 
-                        <input type="text" placeholder="Логин" className="login-input" />
-                        <input type="password" placeholder="Пароль" className="login-input" />
 
-                        <div className="login-links">
-                            <Link className="login-link" to="/registration">Регистрация</Link>
-                            <Link className="login-link" to="/lostpassword">Забыли пароль?</Link>
-                        </div>
+                        <input type="text" placeholder="Почта" className="login-input" />
+
+
+
 
                         <button className="login-button">Далее</button>
                     </div>
 
                    
-                    <div className="login-info">
+                    <div className="login-info2">
 
 
                         <div className="login-image">

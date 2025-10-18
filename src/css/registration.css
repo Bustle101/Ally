@@ -17,6 +17,15 @@ body {
  
 }
 
+.back {
+ 
+    padding-right: 250px;
+    color: rgb(242, 246, 248);
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
 .login-title{
 	color: transparent;    
 	-webkit-background-clip: text;
@@ -41,7 +50,7 @@ h2{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 5%;
+    padding-top: 9%;
 }
 
 .login-links {
@@ -81,13 +90,14 @@ h2{
     margin-top: 10%;
 }
 
-.login-info {
-    padding-top: 5%;
+.login-info2 {
+    padding: 5%;
+    padding-top: 15%;
     width: 500px;
    
 }
 
-.login-info img{
+.login-info2 img{
     width: 80%;
     height: 80%;
     border-radius: 100%;
@@ -98,3 +108,4 @@ h2{
 .login-button{
     color:rgb(167, 196, 207);
 }
+
