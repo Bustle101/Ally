@@ -1,4 +1,4 @@
-import "../css/registration.css"
+import "../css/enter.css"
 import { Link } from "react-router-dom";
 
 export default function Registration(){
@@ -8,7 +8,10 @@ export default function Registration(){
 
                     
                     <div className="login-form">
-                        <Link className="back" to="/">Назад</Link>
+                        <div className="back-container">
+                            <Link className="back" to="/">Назад</Link>
+                        </div>
+                       
                         <h2 className="login-title">Регистрация</h2>
 
                         <input type="text" placeholder="Логин" className="login-input" />
@@ -22,7 +25,7 @@ export default function Registration(){
                     </div>
 
                    
-                    <div className="login-info2">
+                    <div className="login-info">
 
 
                         <div className="login-image">

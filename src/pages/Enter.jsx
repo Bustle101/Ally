@@ -17,7 +17,8 @@ export default function Enter(){
                             <Link className="login-link" to="/lostpassword">Забыли пароль?</Link>
                         </div>
 
-                        <button className="login-button">Далее</button>
+                        
+                        <Link className="login-button" to="/home">Далее</Link>
                     </div>
 
                    
