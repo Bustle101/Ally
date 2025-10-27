@@ -1,0 +1,39 @@
+.link{
+  margin-top: 100px;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 12px 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  font-size: 1.1rem;
+  color:rgb(73, 127, 146);
+  text-decoration: none;
+}
+
+.list-links{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.switch-cont{
+  display: flex;
+  justify-content: center;  /* центр по горизонтали */
+  align-items: center;      /* центр по вертикали */
+  gap: 20px;                /* расстояние между кнопками */
+  width: 100%;
+  
+  
+}
+.switch{
+  
+  background: rgba(255, 255, 255, 0.8);
+  padding: 12px 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  font-size: 1.1rem;
+  color:rgb(73, 127, 146);
+  text-decoration: none;
+  border:none;
+}

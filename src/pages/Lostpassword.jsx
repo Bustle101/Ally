@@ -8,7 +8,7 @@ export default function Registration(){
 
                     
                     <div className="login-form">
-                        <div className="back-container" style={padding-bottom}>
+                        <div className="back-container">
                             <Link className="back" to="/">Назад</Link>
                         </div>
                        

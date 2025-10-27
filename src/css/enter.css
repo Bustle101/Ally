@@ -76,6 +76,7 @@
   border-radius: 25px;
   padding: 8px 25px;
   transition: 0.2s;
+  border:none;
 }
 
 .login-button:hover {

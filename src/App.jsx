@@ -5,6 +5,9 @@ import Registration from "./pages/Registration";
 import Lostpassword from "./pages/Lostpassword";
 import Home from "./pages/Home.jsx";
 import Profile from "./pages/Profile";
+import Accounts from "./pages/Accounts.jsx"
+import IncomeExpenses from "./pages/IncomeExpenses.jsx";
+import Debts from "./pages/Debts.jsx";
 
 function App() {
 
@@ -17,6 +20,9 @@ function App() {
         <Route path="/lostpassword" element={<Lostpassword/>} />
         <Route path="/home" element={<Home/>} />
         <Route path="/profile" element={<Profile/>} />
+        <Route path="/accounts" element={<Accounts/>} />
+        <Route path="/incomeexpenses" element={<IncomeExpenses/>} />
+        <Route path="/debts" element={<Debts/>} />
       </Routes>
     </>
   )
