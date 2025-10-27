@@ -12,11 +12,11 @@ const DB_SERVICE_URL = process.env.DB_SERVICE_URL || "http://localhost:5001";
 
 
 app.post("/login", async (req, res) => {
-  const { username, password } = req.body;
+  const { login, password } = req.body; // изменили username → login
 
   try {
-    
-    const response = await axios.post(`${DB_SERVICE_URL}/findUser`, { username });
+    // теперь передаем login вместо username
+    const response = await axios.post(`${DB_SERVICE_URL}/findUser`, { login });
     const user = response.data;
 
     if (!user) {
@@ -24,15 +24,16 @@ app.post("/login", async (req, res) => {
     }
 
     if (user.password === password) {
-      return res.json({ message: " Login successful", user });
+      return res.json({ message: "Login successful", user });
     } else {
-      return res.status(401).json({ message: " Invalid password" });
+      return res.status(401).json({ message: "Invalid password" });
     }
   } catch (err) {
     console.error("DB service error:", err.message);
     res.status(500).json({ message: "Database service error" });
   }
 });
+
 
 
 app.get("/", (req, res) => {

@@ -33,3 +33,14 @@ services:
       - "5001:5001"
     environment:
       - PORT=5001
+
+  nginx:
+    image: nginx:latest
+    container_name: ally-nginx
+    ports:
+      - "8080:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+    depends_on:
+      - server
+
